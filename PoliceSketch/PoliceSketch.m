@@ -27,21 +27,57 @@
 
 
 -(UIImage *)prevEye{
-    if(self.eyesIndex == 0){ //if 
+    if(self.eyesIndex == 0){ //if your at last position move back
         self.eyesIndex = [self.eyes count] -1;
     }else{
-        self.eyesIndex--;
+        self.eyesIndex--;  //decrement
     }
     return self.eyes[self.eyesIndex];
 }
 
 -(UIImage *)nextEye{
-    if(self.eyesIndex == [self.eyes count]-1){
+    if(self.eyesIndex == [self.eyes count]-1){ //move from prev to next
         self.eyesIndex = 0;
     }else{
-        self.eyesIndex++;
+        self.eyesIndex++;  //increment
     }
     return self.eyes[self.eyesIndex];
+}
+
+-(UIImage *)prevNose{
+    if(self.noseIndex == 0){ //if your at last position move back
+        self.noseIndex = [self.nose count] -1;
+    }else{
+        self.noseIndex--;  //decrement
+    }
+    return self.nose[self.noseIndex];
+}
+
+-(UIImage *)nextNose{
+    if(self.noseIndex == [self.nose count]-1){ //move from prev to next
+        self.noseIndex = 0;
+    }else{
+        self.noseIndex++;  //increment
+    }
+    return self.nose[self.noseIndex];
+}
+
+-(UIImage *)prevMouth{
+    if(self.mouthIndex == 0){ //if your at last position move back
+        self.mouthIndex = [self.mouth count] -1;
+    }else{
+        self.mouthIndex--;  //decrement
+    }
+    return self.mouth[self.mouthIndex];
+}
+
+-(UIImage *)nextMouth{
+    if(self.mouthIndex == [self.mouth count]-1){ //move from prev to next
+        self.mouthIndex = 0;
+    }else{
+        self.mouthIndex++;  //increment
+    }
+    return self.mouth[self.mouthIndex];
 }
 
 @end

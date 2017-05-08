@@ -35,6 +35,9 @@
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="eyesPrev:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dWb-YO-AQP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
                                 <rect key="frame" x="307.5" y="56" width="50" height="100"/>
@@ -44,6 +47,9 @@
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="eyesNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QPP-bh-uha"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-i2-DKQ">
                                 <rect key="frame" x="77.5" y="206" width="220" height="100"/>
@@ -60,6 +66,9 @@
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nosePrev:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G9L-S4-ZMq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQh-XD-9uk">
                                 <rect key="frame" x="307" y="206" width="50" height="100"/>
@@ -69,6 +78,9 @@
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="noseNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yya-fz-dyf"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wac-oa-gNw">
                                 <rect key="frame" x="77" y="356" width="220" height="100"/>
@@ -85,6 +97,9 @@
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mouthNext:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9QO-oS-hp5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYw-3x-V6U">
                                 <rect key="frame" x="17" y="356" width="50" height="100"/>
@@ -94,6 +109,9 @@
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mouthPrev:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Hu-Q2-blJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,9 +137,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="NY4-Kv-j1f" id="GJ7-1E-Ay5"/>
-                        <outlet property="nextImg" destination="oaW-ja-FCK" id="aPX-xg-geW"/>
-                        <outlet property="prevImg" destination="yXb-1x-fkn" id="lqF-Os-Q48"/>
+                        <outlet property="eyesIMG" destination="NY4-Kv-j1f" id="4We-gA-MkH"/>
+                        <outlet property="mouthIMG" destination="wac-oa-gNw" id="Ih8-rr-jyy"/>
+                        <outlet property="noseIMG" destination="jnz-i2-DKQ" id="qR9-KF-iKd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
