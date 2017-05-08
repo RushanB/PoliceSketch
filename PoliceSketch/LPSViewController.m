@@ -10,6 +10,10 @@
 
 @interface LPSViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *prevImg;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UIButton *nextImg;
+
 @end
 
 @implementation LPSViewController
